@@ -1,7 +1,7 @@
 'use strict';
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://minkhant:zaw@cluster0.hbuus.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(process.env.DB)
   .then(() => {
     console.log('Connected to database!');
   })
